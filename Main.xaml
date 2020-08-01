@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1239,4654" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1239,4216" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="24">
       <x:String>System.Activities</x:String>
@@ -48,7 +48,7 @@
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="720,4489" sap2010:WorkflowViewState.IdRef="Sequence_9">
+  <Sequence sap:VirtualizedContainerService.HintSize="720,4051" sap2010:WorkflowViewState.IdRef="Sequence_9">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="SongDataTable" />
       <Variable x:TypeArguments="x:String" Name="Playlist" />
@@ -63,13 +63,13 @@
         <OutArgument x:TypeArguments="x:String">[Playlist]</OutArgument>
       </ui:InputDialog.Result>
     </ui:InputDialog>
-    <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Open Application 'spotify.exe Spotify'" FileName="C:\Users\Anuraag\AppData\Roaming\Spotify\spotify.exe" sap:VirtualizedContainerService.HintSize="678,4265" sap2010:WorkflowViewState.IdRef="OpenApplication_3" InformativeScreenshot="35398426a4ed95807a2516728a03da26" Selector="&lt;wnd app='spotify.exe' cls='Chrome_WidgetWin_0' title='Spotify Free' /&gt;">
+    <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Open Application 'spotify.exe Spotify'" FileName="C:\Users\Anuraag\AppData\Roaming\Spotify\spotify.exe" sap:VirtualizedContainerService.HintSize="678,3827" sap2010:WorkflowViewState.IdRef="OpenApplication_3" InformativeScreenshot="35398426a4ed95807a2516728a03da26" Selector="&lt;wnd app='spotify.exe' cls='Chrome_WidgetWin_0' title='Spotify Free' /&gt;">
       <ui:OpenApplication.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="644,4119" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="644,3681" sap2010:WorkflowViewState.IdRef="Sequence_8">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -217,26 +217,26 @@
               </ui:WindowScope>
             </Sequence>
             <ui:CloseWindow Selector="{x:Null}" TimeoutMS="{x:Null}" UseWindow="{x:Null}" DisplayName="Close Window 'spotify.exe Spotify'" sap:VirtualizedContainerService.HintSize="602,106" sap2010:WorkflowViewState.IdRef="CloseWindow_1" InformativeScreenshot="cdf6d8b06aaf5b15f2901ca3e77bca49" WaitForReady="INTERACTIVE" />
-            <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="602,2191" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" WorkbookPath="songDataTabe.xlsx">
+            <ui:ExcelApplicationScope Password="{x:Null}" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="602,1753" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_1" WorkbookPath="songDataTabe.xlsx">
               <ui:ExcelApplicationScope.Body>
                 <ActivityAction x:TypeArguments="ui:WorkbookApplication">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ui:WorkbookApplication" Name="ExcelWorkbookScope" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="568,2082" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="568,1644" sap2010:WorkflowViewState.IdRef="Sequence_12">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <ui:ExcelWriteRange AddHeaders="False" DataTable="[SongDataTable]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="526,87" sap2010:WorkflowViewState.IdRef="ExcelWriteRange_1" SheetName="Sheet1" StartingCell="A1" />
-                    <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[SongDataTable]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="526,1863" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+                    <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[SongDataTable]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="526,1425" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                       <ui:ForEachRow.Body>
                         <ActivityAction x:TypeArguments="sd:DataRow">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="row" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,1716" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,1278" sap2010:WorkflowViewState.IdRef="Sequence_15">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="x:String" Name="Artist" />
                             </Sequence.Variables>
@@ -251,13 +251,13 @@
                               </ui:GetRowItem.Value>
                             </ui:GetRowItem>
                             <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="434,22" sap2010:WorkflowViewState.IdRef="Delay_13" />
-                            <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Open Application 'spotify.exe Spotify'" FileName="C:\Users\Anuraag\AppData\Roaming\Spotify\spotify.exe" sap:VirtualizedContainerService.HintSize="434,1458" sap2010:WorkflowViewState.IdRef="OpenApplication_5" InformativeScreenshot="35398426a4ed95807a2516728a03da26" Selector="&lt;wnd app='spotify.exe' cls='Chrome_WidgetWin_0' title='Spotify Free' /&gt;">
+                            <ui:OpenApplication ApplicationWindow="{x:Null}" Arguments="{x:Null}" TimeoutMS="{x:Null}" WorkingDirectory="{x:Null}" DisplayName="Open Application 'spotify.exe Spotify'" FileName="C:\Users\Anuraag\AppData\Roaming\Spotify\spotify.exe" sap:VirtualizedContainerService.HintSize="434,1020" sap2010:WorkflowViewState.IdRef="OpenApplication_5" InformativeScreenshot="35398426a4ed95807a2516728a03da26" Selector="&lt;wnd app='spotify.exe' cls='Chrome_WidgetWin_0' title='Spotify Free' /&gt;">
                               <ui:OpenApplication.Body>
                                 <ActivityAction x:TypeArguments="x:Object">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,1312" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,874" sap2010:WorkflowViewState.IdRef="Sequence_19">
                                     <sap:WorkflowViewStateService.ViewState>
                                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -298,8 +298,8 @@
                                         </ui:Target>
                                       </ui:TypeInto.Target>
                                     </ui:TypeInto>
-                                    <Delay Duration="00:00:15" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_16" />
-                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'grouping'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_35" KeyModifiers="None" MouseButton="BTN_LEFT">
+                                    <Delay Duration="00:00:02" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_16" />
+                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'grouping'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_38" KeyModifiers="None" MouseButton="BTN_LEFT">
                                       <ui:Click.CursorPosition>
                                         <ui:CursorPosition Position="Center">
                                           <ui:CursorPosition.OffsetX>
@@ -311,9 +311,9 @@
                                         </ui:CursorPosition>
                                       </ui:Click.CursorPosition>
                                       <ui:Click.Target>
-                                        <ui:Target Element="{x:Null}" Id="0622d797-3540-4d87-8890-d803954ec6ea" InformativeScreenshot="743d411346b07bf141ea05f1088ccbbb" Selector="&lt;ctrl name='Spotify' role='document' /&gt;&lt;ctrl name='Accessibility Links Accessibility Links Your Library and Playlis*' role='grouping' /&gt;&lt;ctrl name='Search' role='grouping' /&gt;&lt;ctrl name='Search' role='document' /&gt;&lt;ctrl idx='196' role='grouping' /&gt;">
+                                        <ui:Target Element="{x:Null}" Id="0c9e77d9-4ba2-4b94-bcf6-0e2dc50908bf" InformativeScreenshot="26cb05b9ff6a4f986c292402bec74182" Selector="&lt;ctrl name='Spotify' role='document' /&gt;&lt;ctrl name='Accessibility Links Accessibility Links Your Library and Playlis*' role='grouping' /&gt;&lt;ctrl name='Search' role='document' /&gt;&lt;ctrl idx='8' role='grouping' /&gt;">
                                           <ui:Target.ClippingRegion>
-                                            <ui:Region Rectangle="122, 33, 7, 26" />
+                                            <ui:Region Rectangle="4, 65, 193, 88" />
                                           </ui:Target.ClippingRegion>
                                           <ui:Target.TimeoutMS>
                                             <InArgument x:TypeArguments="x:Int32" />
@@ -324,73 +324,7 @@
                                         </ui:Target>
                                       </ui:Click.Target>
                                     </ui:Click>
-                                    <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_19" />
-                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'cell  bad guy'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_32" KeyModifiers="Ctrl" MouseButton="BTN_LEFT">
-                                      <ui:Click.CursorPosition>
-                                        <ui:CursorPosition Position="Center">
-                                          <ui:CursorPosition.OffsetX>
-                                            <InArgument x:TypeArguments="x:Int32" />
-                                          </ui:CursorPosition.OffsetX>
-                                          <ui:CursorPosition.OffsetY>
-                                            <InArgument x:TypeArguments="x:Int32" />
-                                          </ui:CursorPosition.OffsetY>
-                                        </ui:CursorPosition>
-                                      </ui:Click.CursorPosition>
-                                      <ui:Click.Target>
-                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f2d50b61-2108-4448-91f1-df1429237c37" InformativeScreenshot="4c79b43e01f745185922ca1b05500dc5" Selector="&lt;ctrl name='Spotify' role='document' /&gt;&lt;ctrl name='Accessibility Links Accessibility Links Your Library and Playlis*' role='grouping' /&gt;&lt;ctrl name='Artist:undefined' role='grouping' /&gt;&lt;ctrl name='Artist:undefined' role='document' /&gt;&lt;ctrl idx='1' name='bad guy by Billie Eilish. Press Shift + Enter to play.' role='row' /&gt;&lt;ctrl name='bad guy' role='cell' /&gt;">
-                                          <ui:Target.TimeoutMS>
-                                            <InArgument x:TypeArguments="x:Int32" />
-                                          </ui:Target.TimeoutMS>
-                                          <ui:Target.WaitForReady>
-                                            <InArgument x:TypeArguments="ui:WaitForReady" />
-                                          </ui:Target.WaitForReady>
-                                        </ui:Target>
-                                      </ui:Click.Target>
-                                    </ui:Click>
-                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'cell  bad guy'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_33" KeyModifiers="Ctrl" MouseButton="BTN_LEFT">
-                                      <ui:Click.CursorPosition>
-                                        <ui:CursorPosition Position="Center">
-                                          <ui:CursorPosition.OffsetX>
-                                            <InArgument x:TypeArguments="x:Int32" />
-                                          </ui:CursorPosition.OffsetX>
-                                          <ui:CursorPosition.OffsetY>
-                                            <InArgument x:TypeArguments="x:Int32" />
-                                          </ui:CursorPosition.OffsetY>
-                                        </ui:CursorPosition>
-                                      </ui:Click.CursorPosition>
-                                      <ui:Click.Target>
-                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f2d50b61-2108-4448-91f1-df1429237c37" InformativeScreenshot="aa3428b4b6d492943e78aff8e358d97a" Selector="&lt;ctrl name='Spotify' role='document' /&gt;&lt;ctrl name='Accessibility Links Accessibility Links Your Library and Playlis*' role='grouping' /&gt;&lt;ctrl name='Artist:undefined' role='grouping' /&gt;&lt;ctrl name='Artist:undefined' role='document' /&gt;&lt;ctrl name='everything i wanted by Billie Eilish. Press Shift + Enter to pla*' role='row' /&gt;&lt;ctrl name='everything i wanted' role='cell' /&gt;">
-                                          <ui:Target.TimeoutMS>
-                                            <InArgument x:TypeArguments="x:Int32" />
-                                          </ui:Target.TimeoutMS>
-                                          <ui:Target.WaitForReady>
-                                            <InArgument x:TypeArguments="ui:WaitForReady" />
-                                          </ui:Target.WaitForReady>
-                                        </ui:Target>
-                                      </ui:Click.Target>
-                                    </ui:Click>
-                                    <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'cell  bad guy'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_34" KeyModifiers="Ctrl" MouseButton="BTN_LEFT">
-                                      <ui:Click.CursorPosition>
-                                        <ui:CursorPosition Position="Center">
-                                          <ui:CursorPosition.OffsetX>
-                                            <InArgument x:TypeArguments="x:Int32" />
-                                          </ui:CursorPosition.OffsetX>
-                                          <ui:CursorPosition.OffsetY>
-                                            <InArgument x:TypeArguments="x:Int32" />
-                                          </ui:CursorPosition.OffsetY>
-                                        </ui:CursorPosition>
-                                      </ui:Click.CursorPosition>
-                                      <ui:Click.Target>
-                                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f2d50b61-2108-4448-91f1-df1429237c37" InformativeScreenshot="aed45a13bfa5979179ee07f62da2b5c1" Selector="&lt;ctrl name='Spotify' role='document' /&gt;&lt;ctrl name='Accessibility Links Accessibility Links Your Library and Playlis*' role='grouping' /&gt;&lt;ctrl name='Artist:undefined' role='grouping' /&gt;&lt;ctrl name='Artist:undefined' role='document' /&gt;&lt;ctrl name='lovely (with Khalid) by Billie Eilish. Press Shift + Enter to pl*' role='row' /&gt;&lt;ctrl name='lovely (with Khalid)' role='cell' /&gt;">
-                                          <ui:Target.TimeoutMS>
-                                            <InArgument x:TypeArguments="x:Int32" />
-                                          </ui:Target.TimeoutMS>
-                                          <ui:Target.WaitForReady>
-                                            <InArgument x:TypeArguments="ui:WaitForReady" />
-                                          </ui:Target.WaitForReady>
-                                        </ui:Target>
-                                      </ui:Click.Target>
-                                    </ui:Click>
+                                    <Delay Duration="00:00:04" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_19" />
                                     <Delay Duration="00:00:05" sap:VirtualizedContainerService.HintSize="334,22" sap2010:WorkflowViewState.IdRef="Delay_20" />
                                     <ui:CloseWindow Selector="{x:Null}" TimeoutMS="{x:Null}" UseWindow="{x:Null}" DisplayName="Close Window 'spotify.exe Spotify'" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="CloseWindow_3" InformativeScreenshot="cdf6d8b06aaf5b15f2901ca3e77bca49" WaitForReady="INTERACTIVE" />
                                   </Sequence>
